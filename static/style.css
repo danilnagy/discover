@@ -237,7 +237,8 @@ select {
   font-size: 12px;
   width: 1450px;
   border: 0px solid;
-  resize: none;
+  /*resize: none;*/
+  resize: vertical;
   overflow-y: scroll;
 }
 
