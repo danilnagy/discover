@@ -171,6 +171,8 @@ class Design:
 
 		for i,_o in enumerate(outputs):
 
+			_o = float(_o)
+
 			if _o is None:
 				self.penalty += 1
 				self.feasible = False
@@ -181,17 +183,17 @@ class Design:
 
 			elif outputs_def[i]["type"] == "Constraint":
 				goal = outputs_def[i]["Requirement"]
-				goal_val = outputs_def[i]["val"]
+				goal_val = float(outputs_def[i]["val"])
 
-				if goal_def == "Less than":
+				if goal == "Less than":
 					if _o >= goal_val:
 						self.penalty += 1
 						self.feasible = False
-				elif goal_def == "Greater than":
+				elif goal == "Greater than":
 					if _o <= goal_val:
 						self.penalty += 1
 						self.feasible = False
-				elif goal_def == "Equals":
+				elif goal == "Equals":
 					if _o != goal_val:
 						self.penalty += 1
 						self.feasible = False
