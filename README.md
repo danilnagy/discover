@@ -13,4 +13,8 @@ Working with constraints:
 
 [![Discover](https://img.youtube.com/vi/GGyINdwz2K8/0.jpg)](https://www.youtube.com/watch?v=GGyINdwz2K8)
 
+Visualization:
+
+[![Discover](https://img.youtube.com/vi/VdPShz_5DOY/0.jpg)](https://www.youtube.com/watch?v=VdPShz_5DOY)
+
 [Download](http://bit.ly/discover_samples) sample optimization data
